@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+PYTHON SCRIPT WRITTEN IN PYTHON 2.7
+
 This script accompanies the example trajectory output data for the following 
 paper submitted to Journal of Geophysical Research: Atmospheres
 
