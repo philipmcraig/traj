@@ -142,8 +142,7 @@ def TrajExtract(NSTEPS,data,flist,trajno,intervals):
     return trajdat
 
 shed = 'amr' # specific catchment boundary (e.g. amr = Americas, afr = Africa)
-datadir = '/gws/nopw/j04/ncas_climate_vol1/users/pmcraig/traj_phd/traj_sample/'
-#'/path/to/files/' # specify directory containing files
+datadir = '/path/to/files/' # specify directory containing files
 
 # glob finds all filenames in a directory
 trajfiles = glob.glob(datadir+'utraj-df_'+shed+'*')
@@ -160,7 +159,7 @@ lat = [] # latitude
 lon = [] # longitude
 pres = [] # pressure
 temp = [] # temperature
-PV =[] # potential vorticity
+PV = [] # potential vorticity
 q = [] # specific humidity
 height = [] # height above surface
 blz = [] # boundary layer height
