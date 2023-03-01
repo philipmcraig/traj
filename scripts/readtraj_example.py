@@ -152,7 +152,7 @@ initfiles = pl.asarray(initfiles)
 
 # extract data from initialization files
     #zonal & meridional velocities + surface pressure at t=0
-u0, v0, sp_tj = InitData(initfiles)#,datadir)
+u0, v0, sp_tj = InitData(initfiles)
 
 # set up empty lists for attributes interpolated along trajectories
 lat = [] # latitude
