@@ -1,13 +1,3 @@
-[This template readme file should be edited to be relevant to your dataset. The template proposes a basic set of information to be provided about a dataset. Sections 1-3 provide key information about the dataset and should be completed as fully as possible; Sections 4-5 provide information for interpretation and use of the dataset, and should be completed according to your judgement. Ask yourself in completing these sections: what information would the user of this dataset need in order to be able to understand it or replicate the results?
-
-Use of the README plain text format for dataset documentation is not required, and may not be suitable for longer or more detailed documentation. In these cases, or if preferred, you can use PDF or MS Word.
-
-Information provided here must correspond accurately with information provided in the dataset metadata record, e.g. the dataset title should match exactly, the same Creators should be listed, etc.
-
-The readme file should be saved with the name README_[Creator surname]_[Publication year]. The file name should contain no spaces and not exceed 32 characters. Examples: README_Smith_2022.txt; README_Jones-etal_2022.txt.
-
-Text within square brackets is instructional and should be deleted from the final version of the readme.]
-
 1. ABOUT THE DATASET
 ------------
 
