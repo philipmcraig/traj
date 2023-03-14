@@ -16,7 +16,7 @@ Description: This dataset contains a subset from a dataset of 14-day back trajec
 Cite as: Craig, P. (2023) Back trajectories released from ocean catchment boundaries. University of Reading. Dataset. [DOI]
 
 Related publication: Craig (2018) The Atlantic/Pacific atmospheric moisture budget asymmetry: the role of atmospheric moisture transport. PhD Thesis, University of Reading (https://doi.org/10.48683/1926.00084855)
-		     Craig, Ferreira & Methven (2023) <title to be decided> <to be submitted to JGR Atmospheres>
+		     Craig, Ferreira & Methven (2023) A Lagrangian perspective on the Atlantic and Pacific Precipitation-Evaporation asymmetry. <to be submitted to JGR Atmospheres>
 
 Acknowledgements: David Ferreira & John Methven also contributed to this dataset as PhD supervisors.
 
