@@ -7,17 +7,19 @@ Created on Mon Apr  9 18:52:15 2018
 
 from __future__ import division
 import pylab as pl
-from mpl_toolkits.basemap import Basemap
+#from mpl_toolkits.basemap import Basemap
+import cartopy
+import cartopy.crs as ccrs
 from netCDF4 import Dataset
 
-def ShedPlot():
+def ShedPlot(sheddir):
     """
     """
     m = Basemap(projection='robin',lon_0=-180.,resolution='l')
     m.drawcoastlines(linewidth=0.4,color='lightgray',zorder=1)
     m.drawcountries(color='lightgray',zorder=1)
     
-    sheddir = '/home/np838619/Watershed/shed_defs/'
+    #sheddir = '/home/np838619/Watershed/shed_defs/'
     filex = '_traj_release_new.txt'
     
     Am = pl.genfromtxt(sheddir + 'Am' + filex,skip_header=5)
@@ -222,15 +224,15 @@ def InOutPlot(m,IN_OUT):
     
     return None
 
-exec(open('/home/np838619/Trajectory/trajfuncs.py').read())
+exec(open('C:/Users/phili/GitHub/traj/scripts/trajfuncs.py').read())
 
 pl.close('all')
 clusdir = '/glusterfs/scenario/users/np838619/traj/'
-homedir = '/home/np838619/Trajectory/fluxpart/'
-sheddir = '/home/np838619/Watershed/shed_defs/'
+#homedir = '/home/np838619/Trajectory/fluxpart/'
+sheddir = 'C:/Users/phili/GitHub/watershed/shed_defs/'#'/home/np838619/Watershed/shed_defs/'
 
 pl.figure(figsize=(23.5,13))
-m = ShedPlot(); pl.tight_layout()
+m = ShedPlot(sheddir); pl.tight_layout()
 
 sheds = ['amr','afr','eaa','ara','ari','arp','soa','soi','sop']
 catchints = pl.zeros([len(sheds),8])
@@ -239,7 +241,7 @@ catchints = pl.zeros([len(sheds),8])
 for sd in range(len(sheds)):
 
     shed = sheds[sd]
-    datadir = homedir
+    datadir = 'C:/Users/phili/GitHub/traj/fluxpart/'#homedir
     INTS = pl.genfromtxt(datadir+'annmeans_catchints_'+shed+'.csv',delimiter=',',skip_header=1)
     catchints[sd] = INTS[-1,1:]
 
